@@ -701,44 +701,60 @@
         <div [ngbNavOutlet]="nav" class="mt-2"></div>
         <h3 class="text-main mt-5">FAQs</h3>
 
-        <ngb-accordion #acc="ngbAccordion">
 
-            <ngb-panel id="toggle-1" title="Lorem Ipsum Topic" type="secondary">
-                <ng-template ngbPanelContent>
-                    <h4>Lorem Ipsum Question?</h4>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    <hr>
-                    <h4>Lorem Ipsum Question?</h4>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </ng-template>
-            </ngb-panel>
-        </ngb-accordion>
-        <br>
-        <ngb-accordion #acc="ngbAccordion">
-            <ngb-panel id="toggle-2" title="Lorem Ipsum Topic">
-                <ng-template ngbPanelContent>
-                    <h4>Lorem Ipsum Question?</h4>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    <hr>
-                    <h4>Lorem Ipsum Question?</h4>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </ng-template>
-            </ngb-panel>
-        </ngb-accordion>
-        <br>
-        <ngb-accordion #acc="ngbAccordion">
-            <ngb-panel id="toggle-2" title="Lorem Ipsum Topic">
-                <ng-template ngbPanelContent>
-                    <h4>Lorem Ipsum Question?</h4>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    <hr>
-                    <h4>Lorem Ipsum Question?</h4>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </ng-template>
-            </ngb-panel>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item my-3">
+                <h4 class="accordion-header" id="headingOne">
+                    <div class="collapsed fw-bold" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Lorem Ipsum Topic
+                    </div>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h3>Lorem Ipsum Question?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <hr>
+                        <h3>Lorem Ipsum Question?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-3">
+                <h4 class="accordion-header" id="headingTwo">
+                    <div class=" collapsed fw-bold" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Lorem Ipsum Topic
+                    </div>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h3>Lorem Ipsum Question?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <hr>
+                        <h3>Lorem Ipsum Question?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item my-3">
+                <h4 class="accordion-header" id="headingThree">
+                    <div class=" collapsed fw-bold" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Lorem Ipsum Topic
+                    </div>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h3>Lorem Ipsum Question?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <hr>
+                        <h3>Lorem Ipsum Question?</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        </ngb-accordion>
+
 
 
     </div>
