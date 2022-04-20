@@ -1,0 +1,16 @@
+$(document).ready(function () {
+    // loader
+    setTimeout(function(){
+        $(".page-loader").fadeOut();
+    } , 1200);
+
+    // when click on header bars sidebar collapsed 
+    $(".header-bars").click(function () {
+        $(".dashboard-wrapper").toggleClass("menu-collapse");
+    });
+
+    // when click on main layer in mobile view sidebar collapsed
+    $(".main-layer").click(function () {
+        $(".dashboard-wrapper").toggleClass("menu-collapse");
+    });
+});

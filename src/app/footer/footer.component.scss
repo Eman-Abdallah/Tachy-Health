@@ -1,0 +1,45 @@
+                                        $main-color:#00c0c2;
+                                        footer {
+                                            background-color: #f5f3f4;
+                                            li {
+                                                list-style: none;
+                                            }
+                                            a {
+                                                text-decoration: none;
+                                                color: black;
+                                                font-weight: bold;
+                                                font-size: 16px;
+                                                line-height: 1.8;
+                                            }
+                                            .link {
+                                                color: $main-color;
+                                                &:hover {
+                                                    color: black;
+                                                }
+                                            }
+                                            .info {
+                                                p {
+                                                    font-size: 12px;
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                            .social {
+                                                i {
+                                                    color: $main-color;
+                                                    border-radius: 50%;
+                                                    &:hover {
+                                                        color: white;
+                                                        background-color: $main-color;
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        @media screen and (max-width: 991px) {
+                                            footer {
+                                                i {
+                                                    margin: 5px;
+                                                }
+                                            }
+                                        }

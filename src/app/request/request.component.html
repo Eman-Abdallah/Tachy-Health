@@ -1,0 +1,64 @@
+<section class=" mt-5">
+    <div class="container pt-5 ">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-8">
+                <div class="text-center">
+                    <h2>Request a Demo</h2>
+                    <p>Enter your data so you can register to request a demo</p>
+                </div>
+
+                <form [formGroup]="requestForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group my-3">
+                        <label for="name">Name</label>
+                        <div class="d-sm-block d-md-flex ">
+                            <input type="text" class="form-control mr-2 my-2" placeholder="First Name" formControlName="fName">
+                            <input type="text" class="form-control  my-2" placeholder="Last Name" formControlName="lName">
+                        </div>
+                    </div>
+                    <div class="form-group my-3">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email" formControlName="email">
+                    </div>
+
+                    <div class="form-group my-3">
+                        <label for="phone">Mobile Number</label>
+                        <input type="phone" class="form-control" name="phone" placeholder="Enter Your Number" formControlName="phone">
+                    </div>
+
+                    <div class="form-group my-3">
+                        <label for="country">Country</label>
+                        <select class="form-select" name="country" formControlName="country">
+                            <option disabled selected Value="">Choose Your Country</option>
+                            <option *ngFor="let country of countries" [ngValue]="country">{{country}}</option>
+                          
+                        </select>
+                    </div>
+
+                    <div class="form-group my-3">
+                        <label for="orgName">Organization Name</label>
+                        <input type="text" class="form-control" name="orgName" placeholder="Enter Your Organization Name" formControlName="orgName">
+                    </div>
+
+                    <div class="form-group my-3">
+                        <label for="segment">Segment</label>
+                        <select class="form-select" name="segment" formControlName="segment">
+                            <option disabled selected value="" >Choose Your Segment</option>
+                            <option  *ngFor="let segment of segments" [ngValue]="segment">{{segment}}</option>
+                      
+                        </select>
+                    </div>
+
+                    <div class="form-group my-3">
+                        <label for="profile">
+                            LinkedIn Profile <span>(Optional)</span></label>
+                        <input type="text" class="form-control" name="profile" placeholder="Enter Your Profile URL" formControlName="profile">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn my-3 " [disabled]="!requestForm.valid">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

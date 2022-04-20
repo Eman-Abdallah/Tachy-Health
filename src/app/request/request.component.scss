@@ -1,0 +1,35 @@
+$main-color:#00c0c2;
+section {
+    background-color: #edf2fb;
+}
+
+input.ng-valid,
+select.ng-valid {
+    border: 1px solid green
+}
+
+input.ng-invalid,
+input .ng-untouched,
+select.ng-untouched,
+select.ng-invalid {
+    border: 1px solid red
+}
+
+h2 {
+    color: $main-color;
+    font-weight: bolder;
+}
+
+p {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    background-color: $main-color;
+    color: white;
+    font-weight: bold;
+}
